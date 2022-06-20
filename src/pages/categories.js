@@ -4,7 +4,7 @@ import cat from "./../images/cat.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 const Categories = () => {
-  const { categories, getCategory, input, setInput, handleSubmit } =
+  const { categories, getCategory, input, handleChange, handleSubmit } =
     useGlobalContext();
 
   return (
@@ -16,7 +16,7 @@ const Categories = () => {
         <div className='main_input'>
           <input
             value={input}
-            onChange={(e) => setInput(e.target.value)}
+            onChange={handleChange}
             className='input_place'
             type='text'
             placeholder='Nominee’s Name, Nominee’s Category'

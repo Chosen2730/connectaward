@@ -3,7 +3,8 @@ import { BsSearch } from "react-icons/bs";
 import Voter from "./../components/voter";
 
 const Votes = () => {
-  const { handleSubmit, categories, data } = useGlobalContext();
+  const { handleSubmit, categories, data, input, handleChange } =
+    useGlobalContext();
 
   return (
     <main className='future voters'>
@@ -15,6 +16,8 @@ const Votes = () => {
           <input
             className='input_place'
             type='text'
+            onChange={handleChange}
+            value={input}
             placeholder='Nominee’s Name, Nominee’s Category'
           />
           <BsSearch className='search_icon' />

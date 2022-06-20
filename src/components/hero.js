@@ -3,7 +3,7 @@ import { BsSearch } from "react-icons/bs";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 const Hero = () => {
-  const { handleSubmit, input, setInput } = useGlobalContext();
+  const { handleSubmit, input, handleChange } = useGlobalContext();
   return (
     <main className='hero'>
       <h1 className='main_header'>
@@ -14,7 +14,7 @@ const Hero = () => {
           <input
             className='input_place'
             value={input}
-            onChange={(e) => setInput(e.target.value)}
+            onChange={handleChange}
             type='text'
             placeholder='Nominee’s Name, Nominee’s Category'
           />

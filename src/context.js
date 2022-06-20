@@ -37,9 +37,14 @@ const AppProvider = ({ children }) => {
     setData(newData);
   };
 
+  const handleChange = (e) => {
+    setInput(e.target.value);
+  };
+
   const handleSubmit = (e) => {
-    e.preventDefault();
+    console.log("first");
     console.log(input);
+    e.preventDefault();
     if (input) {
       const newData = votes.filter((vote) => {
         const { name, category } = vote;
@@ -52,6 +57,7 @@ const AppProvider = ({ children }) => {
           return newCat;
         } else return;
       });
+      console.log(newData);
       setData(newData);
       setInput("");
     } else return;
@@ -76,6 +82,7 @@ const AppProvider = ({ children }) => {
         handleSubmit,
         setData,
         votes,
+        handleChange,
       }}
     >
       {children}
