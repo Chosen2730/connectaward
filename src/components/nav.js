@@ -6,6 +6,10 @@ import { useGlobalContext } from "../context";
 
 const Nav = () => {
   const { isNavOpen, setIsNavOpen } = useGlobalContext();
+
+  const closeNav = (e) => {
+    setIsNavOpen(true);
+  };
   return (
     <nav id='navigation'>
       <div className='nav_left nav_div'>
@@ -18,7 +22,7 @@ const Nav = () => {
         </i>
       </div>
       <div className={isNavOpen ? "nav_center" : "nav_center show_nav"}>
-        <ul className='nav_center_ul'>
+        <ul className='nav_center_ul' onClick={closeNav}>
           <Link to='/'>
             <li className='nav_list'>Categories</li>
           </Link>
