@@ -300,6 +300,7 @@ footer h5 {
   padding: 3rem 1rem;
   box-shadow: 0px 2px 15px rgba(230, 230, 230, 0.5);
   border-radius: 8px;
+  width: 100%;
 }
 .future_cont h4 {
   margin: 3rem 0;
@@ -328,6 +329,9 @@ footer h5 {
   height: 200px;
   width: 200px;
   object-fit: contain;
+}
+.tech_cont {
+  width: 100%;
 }
 .tech_cont p {
   color: #3e0563;
