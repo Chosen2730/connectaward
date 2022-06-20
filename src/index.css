@@ -257,6 +257,10 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
+
+.footer_div {
+  width: 100%;
+}
 footer h2 {
   color: #fa9706;
   font-size: 1rem;
@@ -286,6 +290,9 @@ footer h5 {
   background-color: #ffffff;
   margin: 1rem 0;
   padding: 2rem;
+}
+.future_header {
+  width: 100%;
 }
 .future .grid_4 {
   margin: 2rem 0;

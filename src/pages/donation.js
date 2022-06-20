@@ -3,8 +3,10 @@ import note from "./../images/note.png";
 const Donation = () => {
   return (
     <main className='future'>
-      <h2>Make a Donation</h2>
-      <p>Make a contribution to the growth of technology in Africa</p>
+      <div className='future_header'>
+        <h2>Make a Donation</h2>
+        <p>Make a contribution to the growth of technology in Africa</p>
+      </div>
 
       <div className='award award_don'>
         <div>

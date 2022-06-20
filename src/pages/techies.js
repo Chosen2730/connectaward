@@ -2,8 +2,10 @@ import { techies } from "../data";
 const Techies = () => {
   return (
     <main className='future'>
-      <h2>Celebrated Techies</h2>
-      <p>A look into some of our past winners</p>
+      <div className='future_header'>
+        <h2>Celebrated Techies</h2>
+        <p>A look into some of our past winners</p>
+      </div>
       <div className='grid_4 techies'>
         {techies.map((tech, i) => {
           const { img, username, title } = tech;

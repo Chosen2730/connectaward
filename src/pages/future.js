@@ -2,8 +2,10 @@ import flag from "./../images/flag.png";
 const Future = () => {
   return (
     <main className='future'>
-      <h2>Future Editions</h2>
-      <p>Nominate candidates for future editions</p>
+      <div className='future_header'>
+        <h2>Future Editions</h2>
+        <p>Nominate candidates for future editions</p>
+      </div>
       <div className='grid_4 '>
         <div className='future_cont'>
           <img src={flag} alt='' />

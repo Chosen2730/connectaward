@@ -29,8 +29,10 @@ const Past = () => {
   };
   return (
     <main className='future'>
-      <h2>Photo Gallery</h2>
-      <p>Our collage of photos and memories from notable events</p>
+      <div className='future_header'>
+        <h2>Photo Gallery</h2>
+        <p>Our collage of photos and memories from notable events</p>
+      </div>
       <div className='grid_3 techies'>
         {gallery.map((img, index) => {
           return (

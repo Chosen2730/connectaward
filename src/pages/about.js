@@ -3,8 +3,10 @@ import group from "./../images/6.png";
 const About = () => {
   return (
     <main className='future'>
-      <h2>The Connected Awards</h2>
-      <p>Learn about us</p>
+      <div className='future_header'>
+        <h2>The Connected Awards</h2>
+        <p>Learn about us</p>
+      </div>
       <img className='group_img' src={group} alt='group' />
       <div className='award'>
         <div>
