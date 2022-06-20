@@ -23,7 +23,7 @@ const Nav = () => {
       </div>
       <div className={isNavOpen ? "nav_center" : "nav_center show_nav"}>
         <ul className='nav_center_ul' onClick={closeNav}>
-          <Link to='/'>
+          <Link to='categories'>
             <li className='nav_list'>Categories</li>
           </Link>
           <Link to='future'>

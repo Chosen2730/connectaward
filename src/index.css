@@ -110,6 +110,13 @@ form {
   width: 80%;
   margin: 2rem auto;
 }
+
+.submit_link input {
+  background-color: #3e0563;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
 form input {
   padding: 2rem 1rem;
   width: 100%;
@@ -129,6 +136,10 @@ form input {
 }
 .for_icon {
   font-size: 1.5rem;
+}
+.submit_link .view_cat h4 {
+  color: #0c0114;
+  /* text-decoration: none !important; */
 }
 .view_cat {
   display: flex;
@@ -393,4 +404,41 @@ footer h5 {
   align-items: center;
   border-radius: 100%;
   cursor: pointer;
+}
+/* CATEGORIES PAGE */
+.vote_cont {
+  background: #ffffff;
+  box-shadow: 0px 2px 15px rgba(230, 230, 230, 0.5);
+  border-radius: 8px;
+  padding: 2rem;
+}
+.vote_cont i {
+  justify-content: right;
+  display: flex;
+  font-size: 2rem;
+}
+.vote_cont h4 {
+  margin: 1rem 0;
+}
+.votes_header p {
+  margin: 1rem 0;
+}
+.votes_header span {
+  font-size: 3rem;
+}
+.vote_cont p {
+  margin: 1rem 0;
+}
+.count {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  border: 2px solid #3e0563;
+}
+.vote_img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 100%;
+  border: 2px solid #3e0563;
 }
