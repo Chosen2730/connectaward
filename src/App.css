@@ -71,6 +71,9 @@
   .grid_4 {
     grid-template-columns: repeat(2, 1fr);
   }
+  .grid_3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 520px) {
   .talent_div {
@@ -91,5 +94,21 @@
   /* FUTURE EDITION */
   .future .grid_4 {
     grid-template-columns: 1fr;
+  }
+  .grid_3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .disp_gallery {
+    position: relative;
+  }
+  .disp_gallery img {
+    width: 100%;
+  }
+  .nextPrev {
+    position: absolute;
+    bottom: -20%;
+  }
+  .next_btn {
+    right: 0;
   }
 } ;

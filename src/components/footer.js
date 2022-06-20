@@ -7,9 +7,9 @@ const Footer = () => {
       <article className='first_item'>
         <div className='footer_div'>
           <h2>About</h2>
-          <Link to='/'>The Connected magazines</Link>
-          <Link to='/'>Celebrated Techies</Link>
-          <Link to='/'>Past editions</Link>
+          <Link to='about'>The Connected magazines</Link>
+          <Link to='techies'>Celebrated Techies</Link>
+          <Link to='past'>Past editions</Link>
         </div>
         <div className='footer_div'>
           <h2>Legal</h2>

@@ -22,16 +22,16 @@ const Nav = () => {
           <Link to='/'>
             <li className='nav_list'>Categories</li>
           </Link>
-          <Link to='/'>
-            <li className='nav_list'>Past Editions</li>
-          </Link>
           <Link to='future'>
             <li className='nav_list'>Future Editions</li>
           </Link>
-          <Link to='/'>
+          <Link to='techies'>
+            <li className='nav_list'>Celebrated Techies</li>
+          </Link>
+          <Link to='about'>
             <li className='nav_list'>About Us</li>
           </Link>
-          <Link to='/'>
+          <Link to='donation'>
             <li className='nav_list'>Make a Donation</li>
           </Link>
         </ul>

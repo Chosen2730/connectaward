@@ -11,6 +11,7 @@ import stripe from "./../images/stripes.png";
 import stars from "./../images/stars.svg";
 import star from "./../images/star.svg";
 import ribbon from "./../images/ribbon.svg";
+import { Link } from "react-router-dom";
 
 const Center = () => {
   return (
@@ -50,7 +51,9 @@ const Center = () => {
             more-or-less normal distribution of letters, as opposed to using
             'Content here, content here', making it look like readable English.
           </p>
-          <button className='btn create_btn'>Learn More</button>
+          <Link to='about'>
+            <button className='btn create_btn'>Learn More</button>
+          </Link>
         </div>
       </div>
       <div className='absolute1'>
