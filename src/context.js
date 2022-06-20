@@ -39,28 +39,27 @@ const AppProvider = ({ children }) => {
 
   const handleChange = (e) => {
     setInput(e.target.value);
+    console.log(input);
   };
 
   const handleSubmit = (e) => {
     console.log("first");
-    console.log(input);
     e.preventDefault();
-    if (input) {
-      const newData = votes.filter((vote) => {
-        const { name, category } = vote;
-        const newInput = input.toLowerCase();
-        const newName = name.toLowerCase();
-        const newCat = category.toLowerCase();
-        if (newName.includes(newInput)) {
-          return newName;
-        } else if (newCat.includes(newInput)) {
-          return newCat;
-        } else return;
-      });
-      console.log(newData);
-      setData(newData);
-      setInput("");
-    } else return;
+    console.log(input);
+    const newData = votes.filter((vote) => {
+      const { name, category } = vote;
+      const newInput = input.toLowerCase();
+      const newName = name.toLowerCase();
+      const newCat = category.toLowerCase();
+      if (newName.includes(newInput)) {
+        return newName;
+      } else if (newCat.includes(newInput)) {
+        return newCat;
+      } else return;
+    });
+    console.log(newData);
+    setData(newData);
+    setInput("");
   };
 
   return (
