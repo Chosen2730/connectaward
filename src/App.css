@@ -36,4 +36,55 @@
     box-shadow: 0px 1px 0px rgba(219, 219, 219, 0.5);
     padding: 1rem 0;
   }
+
+  .absolute1 .stripe {
+    height: 100px;
+    margin: 0;
+  }
+  .award {
+    flex-direction: column;
+  }
+  .award div {
+    width: 100%;
+  }
+  .talent_div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .first_item {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
+
+@media (max-width: 786px) {
+  .main_header {
+    font-size: 3rem;
+  }
+  form input {
+    padding: 1rem;
+  }
+  .input_place {
+    padding-left: 3rem;
+  }
+  .search_icon {
+    top: 35%;
+  }
+  .grid_4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 520px) {
+  .talent_div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer {
+    padding: 4rem 2rem;
+  }
+  .first_item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .second_item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+} ;
