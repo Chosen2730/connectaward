@@ -61,6 +61,9 @@ nav {
   list-style: none;
   width: 100%;
 }
+.nav_center_ul a {
+  text-decoration: none;
+}
 .nav_list {
   font-size: 1rem;
   text-transform: capitalize;
@@ -162,8 +165,7 @@ form input {
   text-align: center;
   border: 2px solid grey;
   padding: 2rem 0;
-  /* width: 15rem;
-  height: 15rem; */
+  width: 100%;
 }
 .award {
   padding: 0 10%;
@@ -276,4 +278,29 @@ footer h5 {
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
+}
+
+/* FUTURE EDITION PAGE */
+.future {
+  text-align: center;
+  background-color: #ffffff;
+  margin: 1rem 0;
+  padding: 2rem;
+}
+.future .grid_4 {
+  margin: 2rem 0;
+}
+.future h2 {
+  font-size: 2rem;
+}
+.future p {
+  color: #434a54;
+}
+.future_cont {
+  padding: 3rem 1rem;
+  box-shadow: 0px 2px 15px rgba(230, 230, 230, 0.5);
+  border-radius: 8px;
+}
+.future_cont h4 {
+  margin: 3rem 0;
 }

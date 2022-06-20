@@ -19,11 +19,21 @@ const Nav = () => {
       </div>
       <div className={isNavOpen ? "nav_center" : "nav_center show_nav"}>
         <ul className='nav_center_ul'>
-          <li className='nav_list'>Categories</li>
-          <li className='nav_list'>Past Editions</li>
-          <li className='nav_list'>Future Editions</li>
-          <li className='nav_list'>About Us</li>
-          <li className='nav_list'>Make a Donation</li>
+          <Link to='/'>
+            <li className='nav_list'>Categories</li>
+          </Link>
+          <Link to='/'>
+            <li className='nav_list'>Past Editions</li>
+          </Link>
+          <Link to='future'>
+            <li className='nav_list'>Future Editions</li>
+          </Link>
+          <Link to='/'>
+            <li className='nav_list'>About Us</li>
+          </Link>
+          <Link to='/'>
+            <li className='nav_list'>Make a Donation</li>
+          </Link>
         </ul>
       </div>
       <div className={isNavOpen ? "nav_right" : "nav_right show_nav"}>
