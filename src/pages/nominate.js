@@ -23,19 +23,11 @@ const Nominate = () => {
     <main className='power nominate'>
       <article>
         <div className='future_header'>
-          <h2>Accept your nomination for The Connected Awards</h2>
+          <h2>Nominate a candidate for The Connected Award</h2>
           <p>Enter The Nominee’s Information below</p>
         </div>
         <div className=''>
           <form action='' onSubmit={submitNominate} className='nominate_form'>
-            <h4 className='nominee_pic'>Upload Nominees Photo</h4>
-            <div className='img_upload'>
-              <input id='input_pic' type='file' />
-            </div>
-            <label htmlFor='name'>Fullname</label>
-            <input type='name' id='name' />
-            <label htmlFor='email'>Email Address</label>
-            <input type='email' id='email' />
             <label htmlFor='category'>Award Category</label>
             <select name='' id='category'>
               <option>Best in One</option>
@@ -43,6 +35,10 @@ const Nominate = () => {
               <option>Best in three</option>
               <option>Best in four</option>
             </select>
+            <label htmlFor='name'>Fullname</label>
+            <input type='name' id='name' />
+            <label htmlFor='email'>Email Address</label>
+            <input type='email' id='email' />
             <label htmlFor='years'>Years of Exeperience</label>
             <input type='number' />
             <label htmlFor='country'>Country of Origin</label>
@@ -100,6 +96,19 @@ const Nominate = () => {
               </div>
               <input type='text' />
             </div>
+            <p id='end_p' className='end_p'>
+              The First-Ever Tech Personality Awards Recognizing Promising and
+              Exceptional African Talents in all Technological Fields. The West
+              African Countries include 16 countries of Benin, Burkina Faso,
+              Gambia, Ghana, Guinea, Guinea-Bissau, Ivory Coast, Liberia, Mali,
+              Mauritania, Niger, Nigeria, Senegal, Sierra Leone, and Togo.
+              <br />
+              <br />
+              For questions, partnerships & enquiries, send us a mail via{" "}
+              <a href='mailto:connectedawards@gmail.com'>
+                connectedawards@gmail.com.
+              </a>
+            </p>
             <input type='submit' value='Submit' className='create_btn btn' />
           </form>
         </div>

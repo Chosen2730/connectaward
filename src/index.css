@@ -105,10 +105,10 @@ nav {
 /* HERO SECTION */
 .hero {
   text-align: center;
-  padding: 5rem 1rem;
+  padding: 5rem 0.5rem;
 }
 .main_header {
-  font-size: 5rem;
+  font-size: 4rem;
   width: 85%;
   margin: 0 auto;
 }
@@ -579,7 +579,10 @@ footer h5 {
   width: 70%;
   margin: 0 auto;
 }
-
+.end_p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 .nominate_form input,
 label,
 select {
@@ -633,7 +636,7 @@ select {
   object-fit: contain;
   position: absolute;
   top: 25%;
-  left: 10%;
+  left: 5%;
 }
 .icon_social {
   display: flex;
