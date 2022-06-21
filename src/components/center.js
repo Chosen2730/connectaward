@@ -12,8 +12,10 @@ import stars from "./../images/stars.svg";
 import star from "./../images/star.svg";
 import ribbon from "./../images/ribbon.svg";
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "../context";
 
 const Center = () => {
+  const { pageHandler } = useGlobalContext();
   return (
     <main className='center'>
       <div className='target_div'>
@@ -51,7 +53,7 @@ const Center = () => {
             more-or-less normal distribution of letters, as opposed to using
             'Content here, content here', making it look like readable English.
           </p>
-          <Link to='about'>
+          <Link to='about' onClick={() => pageHandler()}>
             <button className='btn create_btn'>Learn More</button>
           </Link>
         </div>
@@ -67,7 +69,7 @@ const Center = () => {
           <img src={four} alt='' />
         </div>
         <div>
-          <h2>The Connected Awards</h2>
+          <h2>Celebrated Techies</h2>
           <hr className='line' />
           <p className='award_p'>
             The connected is.....It is a long established fact that a reader
@@ -76,7 +78,9 @@ const Center = () => {
             more-or-less normal distribution of letters, as opposed to using
             'Content here, content here', making it look like readable English.
           </p>
-          <button className='btn create_btn'>Learn More</button>
+          <Link to='/techies' onClick={() => pageHandler()}>
+            <button className='btn create_btn'>Learn More</button>
+          </Link>
         </div>
       </div>
       <div className='absolute1'>
