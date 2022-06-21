@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import logo from "./../images/logo.svg";
 import { useGlobalContext } from "../context";
+import { TbLogin } from "react-icons/tb";
 
 const Nav = () => {
   const { isNavOpen, setIsNavOpen } = useGlobalContext();
@@ -13,7 +14,7 @@ const Nav = () => {
   return (
     <nav id='navigation'>
       <div className='nav_left nav_div'>
-        <Link to='/'>
+        <Link to='home'>
           {" "}
           <img src={logo} alt='logo' />
         </Link>
@@ -30,7 +31,7 @@ const Nav = () => {
             <li className='nav_list'>Future Editions</li>
           </Link>
           <Link to='techies'>
-            <li className='nav_list'>Celebrated Techies</li>
+            <li className='nav_list'>Celebrated</li>
           </Link>
           <Link to='about'>
             <li className='nav_list'>About Us</li>
@@ -43,6 +44,9 @@ const Nav = () => {
       <div className={isNavOpen ? "nav_right" : "nav_right show_nav"}>
         <button className='login_btn btn'>Login</button>
         <button className='create_btn btn'>Create Account</button>
+        <button className='login_btn btn login_icon'>
+          <TbLogin />
+        </button>
       </div>
     </nav>
   );

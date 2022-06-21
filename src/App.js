@@ -14,6 +14,8 @@ import Categories from "./pages/categories";
 import Votes from "./pages/vote";
 import Power from "./pages/power";
 import Nominate from "./pages/nominate";
+import Login from "./pages/login";
+import Signin from "./pages/signin";
 
 function App() {
   const {} = useGlobalContext();
@@ -22,7 +24,9 @@ function App() {
     <BrowserRouter>
       <Nav />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Login />} />
+        <Route path='signin' element={<Signin />} />
+        <Route path='home' element={<Home />} />
         <Route path='future' element={<Future />} />
         <Route path='about' element={<About />} />
         <Route path='donation' element={<Donation />} />

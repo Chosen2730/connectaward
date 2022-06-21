@@ -78,6 +78,12 @@ nav {
   gap: 1rem;
   height: auto;
 }
+.nav_right .btn {
+  display: none;
+}
+.nav_right .login_icon {
+  display: block;
+}
 .btn {
   cursor: pointer;
   padding: 0.8rem;
@@ -96,7 +102,7 @@ nav {
 /* HERO SECTION */
 .hero {
   text-align: center;
-  padding: 5rem 0;
+  padding: 5rem 1rem;
 }
 .main_header {
   font-size: 5rem;
@@ -411,6 +417,7 @@ footer h5 {
   box-shadow: 0px 2px 15px rgba(230, 230, 230, 0.5);
   border-radius: 8px;
   padding: 2rem;
+  width: 100%;
 }
 .vote_cont i {
   justify-content: right;
@@ -454,7 +461,6 @@ footer h5 {
   background: url("images/footer.svg");
   color: #fff;
   padding: 2%;
-  min-height: 100vh;
 }
 .power article {
   background-color: #fff;
@@ -638,4 +644,32 @@ select {
   display: grid;
   grid-template-columns: 0.2fr 0.8fr;
   align-items: center;
+}
+.google {
+  background: rgba(221, 220, 220, 0.5);
+  text-align: center;
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.google img {
+  height: 30px;
+}
+.alt {
+  display: grid;
+  grid-template-columns: 0.7fr 0.3fr 0.7fr;
+  color: rgba(119, 119, 119, 0.5);
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.alt hr {
+  border-style: none;
+  border-bottom: 2px solid;
 }

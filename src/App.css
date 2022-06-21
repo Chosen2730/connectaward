@@ -1,7 +1,4 @@
 @media (max-width: 1100px) {
-  .nav_center_ul {
-    grid-template-columns: repeat(3, 1fr);
-  }
   .voters .grid_4 {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -18,7 +15,7 @@
   }
 }
 
-@media (max-width: 905px) {
+@media (max-width: 945px) {
   .one {
     height: 200px;
   }
@@ -37,8 +34,6 @@
   .power_count h2 {
     font-size: 1.5rem;
   }
-}
-@media (max-width: 896px) {
   nav {
     display: block;
   }
@@ -62,6 +57,12 @@
     gap: 1rem;
     height: 0;
     overflow: hidden;
+  }
+  .nav_right .btn {
+    display: block;
+  }
+  .nav_right .login_icon {
+    display: none;
   }
   .show_nav {
     height: auto;
@@ -129,6 +130,10 @@
   }
 }
 @media (max-width: 520px) {
+  form {
+    gap: 0.4rem;
+    width: 100%;
+  }
   .talent_div {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -176,6 +181,28 @@
     padding: 2rem;
   }
   .nominate article {
-    width: 100%;
+    width: 90%;
   }
-} ;
+  .power_count p {
+    font-size: 1rem;
+  }
+  .power_count h1 {
+    font-size: 3rem;
+  }
+  .power_count h2 {
+    font-size: 3rem;
+    margin: 3rem 0;
+  }
+}
+/* LOGIN */
+.future_header h4 {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+.future_header span,
+.forgot span {
+  color: #fa9706;
+}
+.forgot {
+  text-align: center;
+}
