@@ -11,7 +11,20 @@ const AppProvider = ({ children }) => {
   const [num, setNum] = useState(0);
   const [data, setData] = useState(votes);
   const [input, setInput] = useState("");
+  const [page, setPage] = useState(true);
 
+  useEffect(() => {
+    const scroll = window.scrollY;
+    if (scroll > 0) {
+      window.scrollTo({
+        top: 0,
+      });
+    }
+  }, [page]);
+
+  const pageHandler = () => {
+    setPage(!page);
+  };
   const getImage = (img, i) => {
     setNewImg(img);
     setNum(i);
@@ -56,6 +69,7 @@ const AppProvider = ({ children }) => {
     });
     setData(newData);
     setInput("");
+    setPage(!page);
   };
 
   return (
@@ -78,6 +92,7 @@ const AppProvider = ({ children }) => {
         setData,
         votes,
         handleChange,
+        pageHandler,
       }}
     >
       {children}

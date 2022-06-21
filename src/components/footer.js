@@ -1,10 +1,12 @@
 import footer from "./../images/footer.svg";
 import logo2 from "./../images/logo2.png";
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "./../context";
 const Footer = () => {
+  const { pageHandler } = useGlobalContext();
   return (
     <footer>
-      <article className='first_item'>
+      <article className='first_item' onClick={pageHandler}>
         <div className='footer_div'>
           <h2>About</h2>
           <Link to='about'>The Connected magazines</Link>

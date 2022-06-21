@@ -5,9 +5,11 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const navigate = useNavigate();
-  const { input, handleChange, votes, setData, setInput } = useGlobalContext();
+  const { input, handleChange, votes, setData, setInput, pageHandler } =
+    useGlobalContext();
 
   const handleSubmit = (e) => {
+    pageHandler();
     e.preventDefault();
     if (input) {
       const newData = votes.filter((vote) => {

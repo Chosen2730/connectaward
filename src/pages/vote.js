@@ -1,10 +1,12 @@
 import { useGlobalContext } from "./../context";
 import { BsSearch } from "react-icons/bs";
 import Voter from "./../components/voter";
+import { useNavigate } from "react-router-dom";
 
 const Votes = () => {
   const { handleSubmit, categories, data, input, handleChange } =
     useGlobalContext();
+  const navigate = useNavigate();
 
   return (
     <main className='future voters'>
@@ -29,7 +31,9 @@ const Votes = () => {
           You have <span>70</span> votes left
         </p>
 
-        <h4>Increase your voting power Here</h4>
+        <h4 className='increase_vote_link' onClick={() => navigate("/power")}>
+          Increase your voting power Here
+        </h4>
       </div>
       <div className='grid_4'>
         {data.map((vote, i) => {

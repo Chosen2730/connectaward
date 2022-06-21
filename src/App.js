@@ -12,18 +12,11 @@ import Techies from "./pages/techies";
 import Past from "./pages/past";
 import Categories from "./pages/categories";
 import Votes from "./pages/vote";
+import Power from "./pages/power";
 
 function App() {
   const {} = useGlobalContext();
 
-  // useEffect(() => {
-  //   const scroll = window.scrollY;
-  //   if (scroll > 0) {
-  //     window.scrollTo({
-  //       top: 0,
-  //     });
-  //   }
-  // }, [Routes]);
   return (
     <BrowserRouter>
       <Nav />
@@ -36,6 +29,7 @@ function App() {
         <Route path='past' element={<Past />} />
         <Route path='categories' element={<Categories />} />
         <Route path='votes' element={<Votes />} />
+        <Route path='power' element={<Power />} />
       </Routes>
       <Footer />
     </BrowserRouter>

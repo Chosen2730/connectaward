@@ -4,8 +4,14 @@ import cat from "./../images/cat.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 const Categories = () => {
-  const { categories, getCategory, input, handleChange, handleSubmit } =
-    useGlobalContext();
+  const {
+    categories,
+    getCategory,
+    input,
+    handleChange,
+    handleSubmit,
+    pageHandler,
+  } = useGlobalContext();
 
   return (
     <main className='future categories'>
@@ -34,7 +40,12 @@ const Categories = () => {
               <img src={cat} alt='' />
               <h4>{category}</h4>
               <Link to='/votes'>
-                <i onClick={() => getCategory(category)}>
+                <i
+                  onClick={() => {
+                    getCategory(category);
+                    pageHandler();
+                  }}
+                >
                   <IoIosArrowRoundForward />{" "}
                 </i>
               </Link>

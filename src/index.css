@@ -446,3 +446,70 @@ footer h5 {
   font-size: 1rem;
   display: block;
 }
+.increase_vote_link {
+  cursor: pointer;
+}
+/* VOTING POWER */
+.power {
+  background: url("images/footer.svg");
+  color: #fff;
+  padding: 2%;
+  min-height: 100vh;
+}
+.power article {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3% 0;
+  border-radius: 5px;
+}
+.power .future_header {
+  text-align: center;
+  margin: 2rem 0;
+  color: #000;
+}
+.power_count {
+  align-items: flex-end;
+}
+.one,
+.two,
+.three,
+.four {
+  text-align: center;
+  background: url("images/footer.svg");
+  color: #fff;
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.power_count p {
+  font-size: 0.75rem;
+}
+.power_count h1 {
+  font-size: 3rem;
+}
+.power_count h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+.one {
+  height: 300px;
+}
+.two {
+  height: 350px;
+}
+.three {
+  height: 400px;
+}
+.four {
+  height: 450px;
+}
+.power_count .btn {
+  font-size: 0.85rem;
+}

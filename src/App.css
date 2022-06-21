@@ -5,9 +5,43 @@
   .voters .grid_4 {
     grid-template-columns: repeat(3, 1fr);
   }
+  .one,
+  .two,
+  .three,
+  .four {
+    width: 200px;
+  }
 }
 
-@media (max-width: 875px) {
+@media (max-width: 905px) {
+  .one,
+  .two,
+  .three,
+  .four {
+    width: 200px;
+    padding: 2rem;
+  }
+
+  .one {
+    height: 200px;
+  }
+  .two {
+    height: 250px;
+  }
+  .three {
+    height: 300px;
+  }
+  .four {
+    height: 350px;
+  }
+  .power_count h1 {
+    font-size: 1.5rem;
+  }
+  .power_count h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 896px) {
   nav {
     display: block;
   }
@@ -58,6 +92,17 @@
   }
   .voters .grid_4 {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .power_count {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .one,
+  .two,
+  .three,
+  .four {
+    width: 200px;
+    height: 100%;
+    padding: 2rem;
   }
 }
 
@@ -116,5 +161,8 @@
   }
   .next_btn {
     right: 0;
+  }
+  .power_count {
+    grid-template-columns: repeat(1, 1fr);
   }
 } ;
