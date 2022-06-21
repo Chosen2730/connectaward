@@ -48,7 +48,13 @@ const Hero = () => {
         <input type='submit' value='Search' className='btn create_btn' />
       </form>
 
-      <div className='view_cat' onClick={() => navigate("/categories")}>
+      <div
+        className='view_cat'
+        onClick={() => {
+          navigate("/categories");
+          pageHandler();
+        }}
+      >
         <h4>View all categories</h4>
         <IoIosArrowRoundForward className='for_icon' />
       </div>

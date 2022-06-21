@@ -1,4 +1,8 @@
+import { useGlobalContext } from "../context";
+import { MdAssistantNavigation, MdOutlineClose } from "react-icons/md";
+import { Link } from "react-router-dom";
 const Power = () => {
+  const { setPurchase, alert, setAlert } = useGlobalContext();
   return (
     <main className='power'>
       <article>
@@ -13,7 +17,15 @@ const Power = () => {
               <p>votes</p>
             </div>
             <h2>$2.50</h2>
-            <button className='btn'>Buy</button>
+            <button
+              onClick={() => {
+                setPurchase(true);
+                setAlert(true);
+              }}
+              className='btn'
+            >
+              Buy
+            </button>
           </div>
           <div className='two'>
             <div>
@@ -21,7 +33,15 @@ const Power = () => {
               <p>votes</p>
             </div>
             <h2>$5</h2>
-            <button className='btn'>Buy</button>
+            <button
+              onClick={() => {
+                setPurchase(true);
+                setAlert(true);
+              }}
+              className='btn'
+            >
+              Buy
+            </button>
           </div>
           <div className='three'>
             <div>
@@ -29,7 +49,15 @@ const Power = () => {
               <p>votes</p>
             </div>
             <h2>$7.50</h2>
-            <button className='btn'>Buy</button>
+            <button
+              onClick={() => {
+                setPurchase(true);
+                setAlert(true);
+              }}
+              className='btn'
+            >
+              Buy
+            </button>
           </div>
           <div className='four'>
             <div>
@@ -37,10 +65,38 @@ const Power = () => {
               <p>votes</p>
             </div>
             <h2>$10</h2>
-            <button className='btn'>Buy</button>
+            <button
+              onClick={() => {
+                setPurchase(true);
+                setAlert(true);
+              }}
+              className='btn'
+            >
+              Buy
+            </button>
           </div>
         </div>
       </article>
+      <div className={alert ? "congrats show_congrats" : "congrats"}>
+        <div className='congrats_cont'>
+          <i onClick={() => setAlert(false)} className='close'>
+            <MdOutlineClose />
+          </i>
+          <i className='icon_awe'>
+            <MdAssistantNavigation />
+          </i>
+          <h2>Awesome!</h2>
+          <p>
+            You have successfully Increased your voting power. Go and make your
+            favorite candidate win!
+          </p>
+          <Link to='/votes'>
+            <button onClick={() => setAlert(false)} className='btn create_btn'>
+              Go to voting page
+            </button>
+          </Link>
+        </div>
+      </div>
     </main>
   );
 };

@@ -11,17 +11,14 @@
   .four {
     width: 200px;
   }
+  .social_cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
 }
 
 @media (max-width: 905px) {
-  .one,
-  .two,
-  .three,
-  .four {
-    width: 200px;
-    padding: 2rem;
-  }
-
   .one {
     height: 200px;
   }
@@ -84,6 +81,9 @@
   .award div {
     width: 100%;
   }
+  .future .award {
+    padding: 0;
+  }
   .talent_div {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -100,9 +100,8 @@
   .two,
   .three,
   .four {
-    width: 200px;
+    width: 100%;
     height: 100%;
-    padding: 2rem;
   }
 }
 
@@ -124,6 +123,9 @@
   }
   .grid_3 {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .congrats_cont {
+    width: 85%;
   }
 }
 @media (max-width: 520px) {
@@ -164,5 +166,16 @@
   }
   .power_count {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .one,
+  .two,
+  .three,
+  .four {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+  }
+  .nominate article {
+    width: 100%;
   }
 } ;

@@ -12,7 +12,8 @@ const AppProvider = ({ children }) => {
   const [data, setData] = useState(votes);
   const [input, setInput] = useState("");
   const [page, setPage] = useState(true);
-
+  const [purchase, setPurchase] = useState(false);
+  const [alert, setAlert] = useState(false);
   useEffect(() => {
     const scroll = window.scrollY;
     if (scroll > 0) {
@@ -93,6 +94,10 @@ const AppProvider = ({ children }) => {
         votes,
         handleChange,
         pageHandler,
+        purchase,
+        setPurchase,
+        alert,
+        setAlert,
       }}
     >
       {children}

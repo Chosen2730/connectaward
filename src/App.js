@@ -13,6 +13,7 @@ import Past from "./pages/past";
 import Categories from "./pages/categories";
 import Votes from "./pages/vote";
 import Power from "./pages/power";
+import Nominate from "./pages/nominate";
 
 function App() {
   const {} = useGlobalContext();
@@ -30,6 +31,7 @@ function App() {
         <Route path='categories' element={<Categories />} />
         <Route path='votes' element={<Votes />} />
         <Route path='power' element={<Power />} />
+        <Route path='nominate' element={<Nominate />} />
       </Routes>
       <Footer />
     </BrowserRouter>

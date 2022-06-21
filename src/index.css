@@ -326,11 +326,11 @@ footer h5 {
 /* ABOUT US PAGE */
 .group_img {
   width: 100%;
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
 .future .award {
   text-align: left;
-  padding: 2rem;
+  padding: 0 2rem;
   gap: 3rem;
 }
 .teach_img1 {
@@ -458,11 +458,7 @@ footer h5 {
 }
 .power article {
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 3% 0;
+  padding: 3%;
   border-radius: 5px;
 }
 .power .future_header {
@@ -512,4 +508,134 @@ footer h5 {
 }
 .power_count .btn {
   font-size: 0.85rem;
+}
+.congrats {
+  background: linear-gradient(
+    rgba(195, 193, 193, 0.5),
+    rgba(184, 184, 184, 0.5)
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: scale(0);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.5s;
+}
+.show_congrats {
+  transform: scale(1);
+}
+.congrats_cont {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 5rem 1rem 3rem;
+  width: 50%;
+  position: relative;
+}
+.congrats_cont .btn {
+  padding: 1.5rem 0;
+}
+.congrats_cont h2 {
+  color: #3e0563;
+}
+.congrats_cont p {
+  margin: 1.5rem;
+}
+.icon_awe,
+.vote_cont .icon_awe {
+  color: #fa9706;
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.close {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+/* NOMINATE */
+.nominate {
+  color: #000;
+}
+.nominate article {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.nominate_form input,
+label,
+select {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+}
+.nominate_form input,
+select {
+  padding: 1.2rem;
+  border-radius: 5px;
+  border-style: none;
+  border: 2px solid #cecece;
+}
+#input_pic {
+  border: none;
+}
+.img_upload {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  border: 2px dashed #434a54;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto 2rem;
+}
+.nominee_pic {
+  text-align: center;
+}
+.nominate_form input,
+select {
+  margin-bottom: 2rem;
+}
+.nominate_form label {
+  margin-bottom: 0.7rem;
+}
+.flag select {
+  padding-left: 5rem;
+}
+.flag {
+  position: relative;
+}
+.nominate_form {
+  display: block;
+}
+.count_flag {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  position: absolute;
+  top: 7%;
+  left: 2%;
+}
+.icon_social {
+  display: flex;
+  align-items: center;
+}
+.icon_social i {
+  font-size: 2rem;
+  color: #0953b4;
+}
+.social_cont {
+  display: grid;
+  grid-template-columns: 0.2fr 0.8fr;
+  align-items: center;
 }
