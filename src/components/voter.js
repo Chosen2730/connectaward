@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { FaThumbsUp } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
-import { Link } from "react-router-dom";
 const Voter = ({ name, votes }) => {
   const [qty, setQty] = useState(1);
   const { purchase, setAlert, alert, pageHandler } = useGlobalContext();

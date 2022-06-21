@@ -1,4 +1,3 @@
-import footer from "./../images/footer.svg";
 import logo2 from "./../images/logo2.png";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "./../context";

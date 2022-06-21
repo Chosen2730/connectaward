@@ -1,5 +1,5 @@
 import { useContext, useState, createContext, useEffect } from "react";
-import { gallery, votes } from "./data";
+import { votes } from "./data";
 
 const categories = [...new Set(votes.map((item) => item.category))];
 
@@ -66,7 +66,7 @@ const AppProvider = ({ children }) => {
         return newName;
       } else if (newCat.includes(newInput)) {
         return newCat;
-      } else return;
+      } else return "";
     });
     setData(newData);
     setInput("");

@@ -1,10 +1,8 @@
 import { gallery } from "../data";
 import { GrNext, GrPrevious } from "react-icons/gr";
 import { useGlobalContext } from "./../context";
-import img from "./../images/dav.jpg";
 const Past = () => {
-  const { image, getImage, newImg, imageHandler, setNum, num } =
-    useGlobalContext();
+  const { image, getImage, imageHandler, setNum, num } = useGlobalContext();
 
   const nextPrev = (action) => {
     if (action === "next") {

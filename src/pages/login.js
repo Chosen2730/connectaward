@@ -1,14 +1,10 @@
 import { useGlobalContext } from "../context";
-import nig from "../images/nig.png";
-import { Link } from "react-router-dom";
-import { FaThumbsUp } from "react-icons/fa";
-import { MdOutlineClose } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import google from "../images/google.png";
 
 const Login = () => {
   const navigate = useNavigate();
-  const { alert, setAlert, pageHandler } = useGlobalContext();
+  const { pageHandler } = useGlobalContext();
 
   const login = (e) => {
     e.preventDefault();

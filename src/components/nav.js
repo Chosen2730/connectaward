@@ -42,11 +42,17 @@ const Nav = () => {
         </ul>
       </div>
       <div className={isNavOpen ? "nav_right" : "nav_right show_nav"}>
-        <button className='login_btn btn'>Login</button>
-        <button className='create_btn btn'>Create Account</button>
-        <button className='login_btn btn login_icon'>
-          <TbLogin />
-        </button>
+        <Link to='/'>
+          <button className='login_btn btn'>Login</button>
+        </Link>
+        <Link to='signin'>
+          <button className='create_btn btn'>Create Account</button>
+        </Link>
+        <Link to='/'>
+          <button className='login_btn btn login_icon'>
+            <TbLogin />
+          </button>
+        </Link>
       </div>
     </nav>
   );

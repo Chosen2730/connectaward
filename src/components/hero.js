@@ -1,7 +1,7 @@
 import { useGlobalContext } from "./../context";
 import { BsSearch } from "react-icons/bs";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -21,9 +21,9 @@ const Hero = () => {
           return newName;
         } else if (newCat.includes(newInput)) {
           return newCat;
-        } else return;
+        } else return "";
       });
-      navigate("votes");
+      navigate("/votes");
       setData(newData);
       setInput("");
     } else return;

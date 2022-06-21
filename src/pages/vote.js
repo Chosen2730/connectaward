@@ -4,8 +4,7 @@ import Voter from "./../components/voter";
 import { useNavigate } from "react-router-dom";
 
 const Votes = () => {
-  const { handleSubmit, categories, data, input, handleChange } =
-    useGlobalContext();
+  const { handleSubmit, data, input, handleChange } = useGlobalContext();
   const navigate = useNavigate();
 
   return (

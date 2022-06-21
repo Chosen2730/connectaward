@@ -84,6 +84,9 @@ nav {
 .nav_right .login_icon {
   display: block;
 }
+.nav_right a {
+  text-decoration: none;
+}
 .btn {
   cursor: pointer;
   padding: 0.8rem;

@@ -1,9 +1,7 @@
 import "./App.css";
-import { useGlobalContext } from "./context";
-import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Nav from "./components/nav";
 import Home from "./pages/home";
-import { useEffect } from "react";
 import Footer from "./components/footer";
 import Future from "./pages/future";
 import About from "./pages/about";
@@ -18,8 +16,6 @@ import Login from "./pages/login";
 import Signin from "./pages/signin";
 
 function App() {
-  const {} = useGlobalContext();
-
   return (
     <BrowserRouter>
       <Nav />
