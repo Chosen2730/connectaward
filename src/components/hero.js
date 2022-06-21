@@ -8,7 +8,6 @@ const Hero = () => {
   const { input, handleChange, votes, setData, setInput } = useGlobalContext();
 
   const handleSubmit = (e) => {
-    console.log("first");
     e.preventDefault();
     if (input) {
       const newData = votes.filter((vote) => {
@@ -23,7 +22,6 @@ const Hero = () => {
         } else return;
       });
       navigate("votes");
-      console.log(newData);
       setData(newData);
       setInput("");
     } else return;
@@ -47,12 +45,11 @@ const Hero = () => {
 
         <input type='submit' value='Search' className='btn create_btn' />
       </form>
-      <Link to='/categories'>
-        <div className='view_cat'>
-          <h4>View all categories</h4>
-          <IoIosArrowRoundForward className='for_icon' />
-        </div>
-      </Link>
+
+      <div className='view_cat' onClick={() => navigate("/categories")}>
+        <h4>View all categories</h4>
+        <IoIosArrowRoundForward className='for_icon' />
+      </div>
     </main>
   );
 };

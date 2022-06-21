@@ -442,3 +442,7 @@ footer h5 {
   border-radius: 100%;
   border: 2px solid #3e0563;
 }
+.query span {
+  font-size: 1rem;
+  display: block;
+}

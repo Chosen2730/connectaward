@@ -39,13 +39,10 @@ const AppProvider = ({ children }) => {
 
   const handleChange = (e) => {
     setInput(e.target.value);
-    console.log(input);
   };
 
   const handleSubmit = (e) => {
-    console.log("first");
     e.preventDefault();
-    console.log(input);
     const newData = votes.filter((vote) => {
       const { name, category } = vote;
       const newInput = input.toLowerCase();
@@ -57,7 +54,6 @@ const AppProvider = ({ children }) => {
         return newCat;
       } else return;
     });
-    console.log(newData);
     setData(newData);
     setInput("");
   };

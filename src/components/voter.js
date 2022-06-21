@@ -1,7 +1,9 @@
 import img from "./../images/user.png";
+import { useGlobalContext } from "./../context";
 import { useState } from "react";
 const Voter = ({ name, votes, category }) => {
   const [qty, setQty] = useState(1);
+  const { data } = useGlobalContext();
   return (
     <div className='vote_cont'>
       <img src={img} className='vote_img' alt='' />

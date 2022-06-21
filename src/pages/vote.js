@@ -28,6 +28,7 @@ const Votes = () => {
         <p>
           You have <span>70</span> votes left
         </p>
+
         <h4>Increase your voting power Here</h4>
       </div>
       <div className='grid_4'>
@@ -35,6 +36,12 @@ const Votes = () => {
           return <Voter key={i} {...vote} />;
         })}
       </div>
+      {data.length === 0 && (
+        <h2 className='query'>
+          Can't find this Techies{" "}
+          <span>Seems something is wrong with your entry</span>{" "}
+        </h2>
+      )}
     </main>
   );
 };
