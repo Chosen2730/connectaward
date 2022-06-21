@@ -182,6 +182,7 @@
   }
   .nominate article {
     width: 90%;
+    padding: 2rem;
   }
   .power_count p {
     font-size: 1rem;

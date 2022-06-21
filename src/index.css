@@ -628,19 +628,19 @@ select {
   display: block;
 }
 .count_flag {
-  height: 60px;
-  width: 60px;
+  height: 30px;
+  width: 30px;
   object-fit: contain;
   position: absolute;
-  top: 7%;
-  left: 2%;
+  top: 25%;
+  left: 10%;
 }
 .icon_social {
   display: flex;
   align-items: center;
 }
 .icon_social i {
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #0953b4;
 }
 .social_cont {
