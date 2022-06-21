@@ -9,12 +9,13 @@ const Voter = ({ name, votes }) => {
   const { purchase, setAlert, alert, pageHandler } = useGlobalContext();
   const navigate = useNavigate();
   const voteHandler = () => {
-    pageHandler();
     if (purchase) {
       setAlert(true);
+      pageHandler();
     } else {
       navigate("/power");
       setAlert(false);
+      pageHandler();
     }
   };
   return (

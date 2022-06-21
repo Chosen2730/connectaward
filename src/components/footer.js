@@ -35,7 +35,8 @@ const Footer = () => {
       <article className='second_item'>
         <h5>Celebrating Techies Globally</h5>
         <h5>
-          © {new Date().getFullYear()} The Conected Awards - All rights reserved
+          © {new Date().getFullYear()} The Connected Awards - All rights
+          reserved
         </h5>
       </article>
     </footer>
