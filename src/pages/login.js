@@ -8,7 +8,7 @@ const Login = () => {
 
   const login = (e) => {
     e.preventDefault();
-    navigate("/home");
+    navigate("/");
     pageHandler();
   };
 
@@ -21,6 +21,7 @@ const Login = () => {
           <p>
             Don’t have an account?{" "}
             <span
+              className='log'
               onClick={() => {
                 navigate("/signin");
                 pageHandler();

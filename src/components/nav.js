@@ -8,13 +8,13 @@ import { TbLogin } from "react-icons/tb";
 const Nav = () => {
   const { isNavOpen, setIsNavOpen } = useGlobalContext();
 
-  const closeNav = (e) => {
+  const closeNav = () => {
     setIsNavOpen(true);
   };
   return (
     <nav id='navigation'>
       <div className='nav_left nav_div'>
-        <Link to='home'>
+        <Link to='/'>
           {" "}
           <img src={logo} alt='logo' />
         </Link>
@@ -42,12 +42,12 @@ const Nav = () => {
         </ul>
       </div>
       <div className={isNavOpen ? "nav_right" : "nav_right show_nav"}>
-        <Link to='/' onClick={closeNav}>
+        <Link to='login' onClick={closeNav}>
           <button className='login_btn btn login_icon'>
             <TbLogin />
           </button>
         </Link>
-        <Link to='/' onClick={closeNav}>
+        <Link to='login' onClick={closeNav}>
           <button className='login_btn btn'>Login</button>
         </Link>
         <Link to='signin' onClick={closeNav}>

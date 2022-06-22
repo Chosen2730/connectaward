@@ -126,7 +126,7 @@ const Nominate = () => {
           <button
             onClick={() => {
               setAlert(false);
-              navigate("/home");
+              navigate("/");
               pageHandler();
             }}
             className='btn create_btn'

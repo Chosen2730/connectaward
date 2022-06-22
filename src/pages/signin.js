@@ -8,7 +8,7 @@ const Signin = () => {
 
   const submitNominate = (e) => {
     e.preventDefault();
-    navigate("/home");
+    navigate("/");
     pageHandler();
     setAlert(true);
   };
@@ -22,8 +22,9 @@ const Signin = () => {
           <p>
             Have an account?{" "}
             <span
+              className='log'
               onClick={() => {
-                navigate("/");
+                navigate("/login");
                 pageHandler();
               }}
             >
@@ -56,7 +57,7 @@ const Signin = () => {
               <option value=''>Male</option>
               <option value=''>Female</option>
             </select>
-            <p className='forgot'>
+            <p className='forgot forget'>
               By registering you agree to Techtrend Africa's{" "}
               <span>Terms of Use</span> and
               <span> Privacy Policy</span>
