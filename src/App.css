@@ -108,8 +108,12 @@
 
 @media (max-width: 786px) {
   .main_header {
-    font-size: 2rem;
+    font-size: 3rem;
   }
+  form {
+    margin: 3rem auto;
+  }
+
   form input {
     padding: 1rem;
   }
