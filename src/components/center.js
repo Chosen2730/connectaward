@@ -53,7 +53,7 @@ const Center = () => {
             more-or-less normal distribution of letters, as opposed to using
             'Content here, content here', making it look like readable English.
           </p>
-          <Link to='about' onClick={() => pageHandler()}>
+          <Link to='/about' onClick={() => pageHandler()}>
             <button className='btn create_btn'>Learn More</button>
           </Link>
         </div>
