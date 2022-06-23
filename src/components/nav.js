@@ -14,7 +14,7 @@ const Nav = () => {
   return (
     <nav id='navigation'>
       <div className='nav_left nav_div'>
-        <Link to='/'>
+        <Link to='/' onClick={closeNav}>
           {" "}
           <img src={logo} alt='logo' />
         </Link>
