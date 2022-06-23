@@ -1,9 +1,11 @@
 import { useGlobalContext } from "./../context";
+import { useState } from "react";
 import { BsSearch } from "react-icons/bs";
 import Voter from "./../components/voter";
 import { useNavigate } from "react-router-dom";
 
 const Votes = () => {
+  const [voteRem, setVoteRem] = useState(70);
   const { handleSubmit, data, input, handleChange } = useGlobalContext();
   const navigate = useNavigate();
 
@@ -27,7 +29,7 @@ const Votes = () => {
       </form>
       <div className='votes_header'>
         <p>
-          You have <span>70</span> votes left
+          You have <span>{voteRem}</span> votes left
         </p>
 
         <h4 className='increase_vote_link' onClick={() => navigate("/power")}>
@@ -36,7 +38,14 @@ const Votes = () => {
       </div>
       <div className='grid_4'>
         {data.map((vote, i) => {
-          return <Voter key={i} {...vote} />;
+          return (
+            <Voter
+              key={i}
+              {...vote}
+              setVoteRem={setVoteRem}
+              voteRem={voteRem}
+            />
+          );
         })}
       </div>
       {data.length === 0 && (
